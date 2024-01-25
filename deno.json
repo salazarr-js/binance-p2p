@@ -1,0 +1,23 @@
+{
+  "imports": {
+    "/": "./src/",
+    "./": "./",
+    "hono/": "https://deno.land/x/hono@v3.12.7/"
+  },
+  "tasks": {
+    "dev": "deno run --watch --allow-all src/app.ts"
+  },
+  "lint": {
+    "rules": {
+      "include": [
+        "camelcase",
+        "eqeqeq"
+      ]
+    }
+  },
+  "fmt": {
+    "lineWidth": 80,
+    "semiColons": false,
+    "singleQuote": true
+  }
+}
